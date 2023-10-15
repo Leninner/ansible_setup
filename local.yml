@@ -4,9 +4,6 @@
   become: true # enable sudo command for different users
 
   tasks:
-  - name: install packages
+  - name: install nginx
     package:
-      name:
-        - htop
-        - tmux
-        - vim-nox
+      name: nginx
