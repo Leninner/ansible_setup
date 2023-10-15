@@ -8,7 +8,7 @@
     package:
       name: nginx
 
-    - name: ensure fonts directory
+  - name: ensure fonts directory
     file:
      path: "{{ lookup('env', 'HOME') }}/.fonts"
       state: directory
