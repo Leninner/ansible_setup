@@ -1,0 +1,10 @@
+---
+- hosts: localhost # when using ansible-pull, actually the host is localhost
+  connection: local
+  become: true # enable sudo command for different users
+
+  tasks:
+  - name: install htop
+    package:
+      name: htop
+
